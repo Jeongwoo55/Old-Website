@@ -1,7 +1,59 @@
 <!DOCTYPE html>
 <html>
+
+  <head>
+    <title>Jeongwoo Choi</title>
+    <link href="./css/index.css" type="text/css" rel="stylesheet" />
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.13.0/css/all.css" />
+
+    <!-- Latest compiled and minified JavaScript -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/js/bootstrap.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+    <script>
+      $(document).ready(function () {
+
+        $(window).scroll(function () {
+
+          if ($(window).scrollTop() > 100) {
+            $("nav").css({ "background-color": "#636b8a" });
+            $("nav a").css({ "color": "white" });
+          } else {
+            $("nav").css({ "background-color": "transparent" });
+            $("nav a").css({ "color": "black" });
+          }
+        });
+      });
+    </script>
+  </head>
+
   <body>
-    <h1>Hello World</h1>
-    <p>I'm hosted with GitHub Pages.</p>
+    <header>
+      <nav>
+        <ul>
+          <li><a href="#">Home</a></li>
+          <li><a href="#contacts">Contacts</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <main>
+      <h2>Hello, my name is</h2>
+      <h1>Jeongwoo Choi</h1>
+    </main>
+
+    <section id="about-me">
+    </section>
+
+    <footer id="contacts">
+      <h2>Contacts</h2>
+      <ul>
+        <li><a href="mailto: JeongwooChoi@my.unt.com"><i class="fas fa-envelope"></i></a></li>
+        <li><a href="https://github.com/jeongwoo55/"><i class="fab fa-github"></i></a></li>
+        <li><a href="https://www.linkedin.com/in/jeongwoo-choi-0505/"><i class="fab fa-linkedin"></i></a></li>
+        <li><a href="https://devpost.com/Jeongwoo55"><i class="fas fa-tools"></i></a></li>
+      </ul>
+      <p>Last updated May 10th, 2020</p>
+    </footer>
   </body>
+
 </html>
